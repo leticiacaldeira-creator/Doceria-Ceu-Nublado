@@ -22,10 +22,22 @@
             <p>Preencha os dados abaixo para fazer seu pedido fofo!</p>
             <form>
                 <label for="nome">Seu Nome:</label><br>
-                <input type="text" id="nome" name="nome"><br><br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo"><br><br>
+
+                <label for="email">Seu E-mail:</label><br>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com"><br><br>
+
+                <label for="telefone">Seu Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999"><br><br>
 
                 <label for="doce">Escolha o Doce:</label><br>
-                <input type="text" id="doce" name="doce"><br><br>
+                <select id="doce" name="doce">
+                    <option value="">-- Selecione um doce --</option>
+                    <option value="brigadeiro">Brigadeiro Gourmet</option>
+                    <option value="bolo_pote">Bolo de Pote Ninho com Nutella</option>
+                    <option value="cupcake">Cupcake de Baunilha</option>
+                    <option value="tortinha">Tortinha de Limão</option>
+                </select><br><br>
 
                 <button type="submit">Enviar Pedido</button>
             </form>
